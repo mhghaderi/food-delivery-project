@@ -11,6 +11,7 @@
 :root {
   --primery-red: #c90000;
   --primery-red-darker: #9c0101;
+  --very-light-gray: #d4d4d4;
   --light-gray: #7d7c7c;
   --medium-gray: #504f4f;
   --dark-gray: #323232;
@@ -53,6 +54,8 @@ body {
   display: flex;
   list-style: none;
   gap: 30px;
+  display: flex;
+  align-items: center;
 }
 
 .header ul li:last-child a {
@@ -118,4 +121,70 @@ body {
 .signin-btn:hover {
   border: 1px solid var(--primery-red-darker);
   transform: scale(105%);
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 1rem;
+  align-items: center;
+}
+.main img {
+  max-width: 90%;
+  min-width: 20rem;
+}
+.main_title {
+  color: var(--primery-red);
+}
+
+.main_text {
+}
+.main_btn-box {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 3rem;
+}
+.order_price {
+  margin-top: 2rem;
+}
+.order_price span {
+  font-weight: bold;
+}
+.order_btn {
+  width: 4.5rem;
+  height: 1.8rem;
+  text-align: center;
+  line-height: normal;
+  cursor: pointer;
+  border-radius: 10rem;
+  background-color: var(--primery-red);
+  border: 1px solid var(--primery-red);
+  color: var(--white);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order_action {
+  display: flex;
+  padding: 1rem;
+  border-radius: 10rem;
+  align-items: center;
+  /* border: 1px solid var(--very-light-gray); */
+  background-color: #fff;
+  gap: 1rem;
+  height: 1.2rem;
+  filter: drop-shadow(0 0 3px var(--very-light-gray));
+}
+
+.order_counter {
+  color: var(--yellow);
+  font-size: 20px;
+  line-height: 10px;
+  padding: 0 1rem;
+  border-right: 1px solid var(--very-light-gray);
+  border-left: 1px solid var(--very-light-gray);
 }
